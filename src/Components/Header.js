@@ -4,14 +4,17 @@ import '../Components/Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import ExpandMoreRoundedIcon from '@material-ui/icons/ExpandMoreRounded';
 import Button from '@material-ui/core/Button';
+import PinterestIcon from '@material-ui/icons/Pinterest';
 
 
 function Header() {
     return (
         <div className='header'>
             <div className="header__left">
-                <img src="https://logos-world.net/wp-content/uploads/2020/09/Pinterest-Logo-2011-present.png" alt=""/>
-                <h3>Pinterest</h3>
+                <Button>
+                    <PinterestIcon />
+                    <h3>Pinterest</h3>
+                </Button>
                 <Button>explore</Button>
             </div>
             <div className="header__middle">
@@ -24,8 +27,6 @@ function Header() {
                 <Button>
                 <ExpandMoreRoundedIcon />  
                 </Button>
-                      
-                
             </div>
         </div>
     )

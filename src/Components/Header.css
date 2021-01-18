@@ -23,20 +23,21 @@ Button {
     
 }
 
-.header__left > h3 {
-    font-size: 17px;
-    font-weight: 800;
+
+
+.header__left  .MuiSvgIcon-root {
+    padding: 5px !important;
+    color: rgb(136, 35, 35);
+    height: 30px;
+    width: 30px;
+}
+
+.header__left h3 {
     color: rgb(136, 35, 35);
 }
 
-.header__left > img {
-    height: 60px;
-    width: 60px;
-    object-fit: contain;
-}
-
 .header__middle{
-    flex: 0.6;
+    flex: 1;
     display: flex;
     padding: 10px;
     border: 2px solid grey;
@@ -51,21 +52,11 @@ Button {
 }
 
 .header__right {
-    flex: 0.2;
     display: flex;
     align-items: center;
     margin-right: 8px;
-    position: fixed;
-    right: 0;
 }
 
-@media only screen and (max-width: 1130px) {
-    .header__middle{
-        width: 50%;
-        flex: 0.5;
-    }
-  
-}
 @media only screen and (max-width: 760px) {
     .header__middle{
         display: none;
