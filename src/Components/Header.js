@@ -19,7 +19,10 @@ function Header() {
             </div>
             <div className="header__middle">
                 <SearchIcon />
-                <input type="text" placeholder='Search anything like Art, Drawing, Fashion, etc. '/>
+                <form>
+                    <input type="text" placeholder='Search anything like Art, Drawing, Fashion, etc. '/>
+                    <button type="submit"></button>
+                </form>
             </div>
             <div className="header__right">
                 <Button>log in</Button>    
